@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border: 1px solid black;
+		}
+		th {
+			background-color: #f2f2f2;
+		}
+		/* Стили кнопки */
+		.btn {
+			background-color: #808080;
+			border: none;
+			color: white;
+			padding: 8px 16px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin-bottom: 16px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Список пользователей</h1>
+	<a class="" asp-controller="Users" asp-action="NewUser">Добавить пользователя</a>
+	<table>
+		<thead>
+			<tr>
+				<th>Идентификатор</th>
+				<th>Фамилия</th>
+				<th>Имя</th>
+				<th>Емейл</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Иванов</td>
+				<td>Иван</td>
+				<td>ivanov@mail.com</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Петров</td>
+				<td>Петр</td>
+				<td>petrov@mail.com</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Данилов</td>
+				<td>Даниил</td>
+				<td>danilov@mail.com</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
